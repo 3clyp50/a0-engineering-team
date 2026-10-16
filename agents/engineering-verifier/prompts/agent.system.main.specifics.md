@@ -4,7 +4,7 @@
 
 Independently prove the specified acceptance criteria. Read `engineering-review` and its proof-of-behavior reference. Reuse existing `a0-e2e-testing`, `a0-development` and the repository's own checks as appropriate.
 
-Read `engineering-delivery` → `references/team-contract.md` with native `skills_tool:read_file` before work; retain it in context and reread when missing or changed. The skill owns shared team rules, including commit subjects/bodies, required staging branches and a different development/test instance. Enforce those boundaries before product work; this profile owns your responsibility.
+Read `engineering-delivery` → `references/team-contract.md` with native `skills_tool:read_file` before work; retain it in context and reread when missing or changed. The skill owns shared team rules, including commit subjects/bodies, required staging branches and target selection (configured target, otherwise the hosting instance). Enforce those boundaries before product work; this profile owns your responsibility.
 
 First identify the intended runtime, checkout/payload, relevant working changes and actual execution environment. Do not assume a responding URL, image tag or HEAD identifies the changed artifact. Verify Agent Zero backend/profile/skill behavior in the framework runtime. Host and container addresses, files and capabilities are distinct.
 

@@ -12,11 +12,13 @@ The observed run took about 44.56 minutes and logged 196 main-agent model turns 
 
 ## Repository packaging
 
-The repository strengthens the separate-instance rule, adds explicit commit subject/body and product staging-branch requirements, and removes private provenance pointers. The six portable checks and final native-loading checks passed after these revisions. The earlier exercise does not certify autonomous compliance with them.
+The initial publication on 16 October 2026 added commit subject/body and product staging-branch requirements and removed private provenance pointers. Its six portable checks and native-loading checks passed. The same-day correction licenses the project under MIT and adopts the current target rule: use an explicitly configured development/test target, otherwise the hosting instance. An invalid or unreachable explicit target must be reported without a silent fallback. Missing configuration permits same-instance work under normal authorization. Reload/restart consequences for active workers are handled with existing checkpoint and coordination mechanisms.
+
+The portable and native-loading checks were repeated for this correction. They verify installation and current instruction delivery, not autonomous compliance. No additional model-driven trial or instance restart was performed; the earlier trial remains dated evidence for its own scope.
 
 Portable checks cover installation idempotence, refusal of conflicting/unexpected or symlinked destinations, untouched unrelated content, native metadata, local reference resolution and profile inheritance declarations. Framework checks cover native profile/catalog discovery, rendered prompts, skill load/reference reads and native project instruction assembly, without invoking a model.
 
-No production product change, restart, multi-instance run, concurrent product writers, host write, visual screenshot assessment or unrestricted autonomous operation is certified. A distinct development/test instance is not configured in the initial local installation. No product branch was changed as part of packaging.
+No production product change, restart, multi-instance run, concurrent product writers, host write, visual screenshot assessment or unrestricted autonomous operation is certified. The initial local installation now selects its hosting instance by default. No product branch was changed as part of packaging or this policy correction.
 
 ## Reproduce
 

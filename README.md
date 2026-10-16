@@ -56,17 +56,13 @@ You do not need to restart Agent Zero for profile discovery. Start a fresh chat 
 
 The versioned `agents/` and `skills/` directories are the source of truth. Deployed files are runtime copies. To update, edit the source, reinstall, then run `--check`.
 
-## Configure a target instance before product work
+## Select the development/test target
 
-The project starts with the development/test target **not configured**. Until a target is verified, product writes, tests and restarts are blocked. Independent read-only planning and task-owned packaging may continue.
+Use the explicitly configured development/test target when one is defined. Otherwise, use the current hosting instance. Missing configuration is a usable same-instance default. An invalid or unreachable explicit target is a problem to report, not a reason to silently switch elsewhere.
 
-This project does not provision an instance. To configure one:
+Record the hosting instance, selected write/test target, actual checkout and backing binds, branch/revision and write scope in your task record. The ignored root `runtime.local.md` can hold local target details; it is optional. Verify an explicitly configured different target and its actual backing paths. Never repurpose an unassigned neighboring instance by assumption.
 
-- Set up a different actual development/test instance from the controller that hosts the team, then verify it.
-- Record the controller and target identities, both backing checkouts or binds, and proof of separation in the git-ignored root file `runtime.local.md`. The proof must show that target writes and restarts cannot affect the controller or workers.
-- If `runtime.local.md` is absent or incomplete, the target remains not configured. That file cannot weaken these rules.
-- A different branch, worktree or process alone is not an isolated instance.
-- Never reuse an unassigned neighboring instance.
+Same-instance product writes and tests follow normal task and repository authorization. If a reload/restart would interrupt active workers on the selected target, checkpoint and coordinate their work using existing lifecycle mechanisms as needed. This project uses operational guidance; it does not provision or route instances.
 
 ## Branch and commit rules
 
@@ -94,4 +90,4 @@ Static and native loading checks are separate from an earlier controlled coordin
 
 ## License
 
-No license has been selected for this repository yet.
+Licensed under the [MIT License](LICENSE). Copyright (c) 2026 3clyp50.

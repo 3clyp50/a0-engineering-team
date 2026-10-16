@@ -10,8 +10,9 @@ For a small direct change, structured notes in the owning conversation suffice. 
 Outcome and observable acceptance:
 Scope and repositories:
 Controller/hosting instance identity, URL, process/container, backing checkout/binds:
-Different development/test INSTANCE identity and backing checkout/binds, or not configured:
-Separation proof: target writes/restarts cannot affect controller/workers:
+Selected development/test target: explicit configured target, otherwise current hosting instance:
+Selected target identity and actual backing checkout/binds; explicit-target validation:
+Reload/restart consequences for active workers; checkpoint/coordination and resumption:
 Write checkout/workdir, required staging branch, revision, dirty state, allowed paths:
 Verification runtime/process and artifact revision/hash:
 Commit authorization, subject/body and real-newline check when applicable:

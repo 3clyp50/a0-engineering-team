@@ -24,7 +24,7 @@ async def main():
     instructions = projects.build_system_prompt_vars(PROJECT)["project_instructions"]
     assert "# A0 Engineering Team DOX" in instructions
     assert "# Project operations" in instructions
-    assert "not configured" in instructions
+    assert "defaults to the hosting instance" in instructions
     available = subagents.get_available_agents_dict(PROJECT)
     for profile in ROLES:
         assert profile in available, profile
@@ -38,7 +38,7 @@ async def main():
             specifics = agent.read_prompt("agent.system.main.specifics.md")
             assert "{{" not in specifics
             assert "references/team-contract.md" in specifics
-            assert "different development/test instance" in specifics
+            assert "configured target, otherwise the hosting instance" in specifics
             if profile in ("chief-of-staff", "delivery-manager"):
                 assert "references/planning-questions.md" in specifics
             default_dirs = [files.get_abs_path("agents/default/prompts"),
@@ -54,7 +54,7 @@ async def main():
             protocol = loop_data.protocol_persistent["project_instructions"]
             assert "# Project operations" in protocol
             assert "# A0 Engineering Team DOX" in protocol
-            assert "not configured" in protocol
+            assert "defaults to the hosting instance" in protocol
             for name in SKILLS:
                 skill = skills.find_skill(name, agent=agent, include_content=True)
                 assert skill and skill.path == root / "usr/skills" / name
@@ -67,6 +67,9 @@ async def main():
                     read = await tool.execute(action="read_file", skill_name=name,
                                               file_path="references/" + reference.name)
                     assert not read.message.startswith("Error") and len(read.message) > 100
+                    if reference.name == "team-contract.md":
+                        assert "defaults to the hosting instance" in read.message
+                        assert "without silently falling back" in read.message
             print(f"PASS: {profile}, native prompt inheritance and skill load/reference reads")
         finally:
             AgentContext.remove(context.id)
