@@ -87,6 +87,10 @@ These checks cover install idempotence, refusal of conflicting, unexpected or sy
 
 Static and native loading checks are separate from an earlier controlled coordination trial on a small helper task. That document describes the trial's limited results and the cases it did not test. The final instance, commit and branch guidance has not been exercised in a new autonomous trial. Static loading is not proof of autonomous delivery.
 
+## Inspiration
+
+Thanks to [Lauren Tan (@poteto)](https://github.com/poteto) for [pstack](https://github.com/cursor/plugins/tree/main/pstack), whose focus on reducing reader load, fixing root causes, bounded work and proof of behavior inspired parts of this project. We combined selected ideas with our own engineering and design lessons, current DOX and evidence from Jan Tomášek's engineering decisions to shape this native Agent Zero workflow.
+
 ## License
 
 Licensed under the [MIT License](LICENSE). Copyright (c) 2026 3clyp50.
