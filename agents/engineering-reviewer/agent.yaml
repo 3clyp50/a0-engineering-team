@@ -1,0 +1,3 @@
+title: Engineering Reviewer
+description: Independently reviews correctness, contracts and engineering decisions.
+context: Use for read-only review of a concrete change and its connected callers. Reports actionable evidence-backed findings directly to the delivery manager; evaluates history and simplicity without demanding imitation or silently fixing code.

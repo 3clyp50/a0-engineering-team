@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+/private/
+/evidence/
+/runtime.local.md
+/.a0proj/*
+!/.a0proj/project.json
+!/.a0proj/instructions/
+/.a0proj/instructions/*
+!/.a0proj/instructions/operations.md
+.env
+*.env
