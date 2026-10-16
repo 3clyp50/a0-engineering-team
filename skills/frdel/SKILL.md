@@ -1,6 +1,6 @@
 ---
 name: frdel
-description: "Research Jan Tomasek's engineering decisions in local history for planning or code review."
+description: "Research Jan Tomášek's engineering decisions in local history for planning or code review."
 ---
 
 # Evidence from Jan's engineering decisions
@@ -15,12 +15,12 @@ Read [planning questions](references/planning-questions.md) before proposing an 
 
 ## Study choices and revisions
 
-Verify author identities rather than treating the committer, merger or repository owner as the author:
+Verify author identities rather than treating the committer, merger or repository owner as the author. The search patterns tolerate historical metadata spellings:
 
 ```bash
 git rev-parse --show-toplevel --is-shallow-repository
-git shortlog -sne --all | rg -i 'frdel|tomasek|tomášek'
-git log --all --no-merges --author='frdel\|Tomasek\|Tomášek' --format='%h %ad %an <%ae> %s' --date=short -- path/to/subsystem
+git shortlog -sne --all | rg -i 'frdel|tom[aá][sš]ek'
+git log --all --no-merges --author='frdel\|Tom[aá][sš]ek' --format='%h %ad %an <%ae> %s' --date=short -- path/to/subsystem
 git log --all --no-merges -S'symbol_or_literal' --oneline -- path/to/subsystem
 git show --format=fuller --stat COMMIT
 git show COMMIT^:path/to/file

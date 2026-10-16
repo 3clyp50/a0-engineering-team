@@ -18,7 +18,7 @@ A native Agent Zero project with six reusable agent profiles and three skills fo
 - `frdel`: planning evidence that managers load before choosing an approach. It covers 12 case groups and 20 authored commit references. It distinguishes recorded rationale, inference, applicability, tradeoff, confidence and counterexample. Paraphrased maintainer-feedback lessons are kept separate from recorded Git evidence.
 - `engineering-review`: review guidance for the team.
 
-Every profile preserves `{{include original}}` for native prompt inheritance. The historical study does not imply Jan Tomasek's endorsement.
+Every profile preserves `{{include original}}` for native prompt inheritance. The historical study does not imply Jan Tomášek's endorsement.
 
 ## How the team works
 
