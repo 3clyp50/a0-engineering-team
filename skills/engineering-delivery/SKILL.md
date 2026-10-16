@@ -21,7 +21,7 @@ Record the choice and its cost: existing owner/primitive reused, alternative rej
 
 ## Execution boundaries
 
-This workflow runs through Agent Zero's native tools, contexts and jobs. Skills and profiles are ordinary installed files under `/a0/usr/`; no Codex app, host transcript, external symlink or hidden host operator is required. A connector may provide authorized host-repository access; a role itself grants no capability. Discover the actual accessible checkout and read/write mode before assigning host work. A blocked host probe does not block independent server work.
+This workflow runs through Agent Zero's native tools, contexts and jobs. Skills and profiles are ordinary installed files under `/a0/usr/`. A connector may provide authorized host-repository access; a role itself grants no capability. Discover the actual accessible checkout and read/write mode before assigning host work. A blocked host probe does not block independent server work.
 
 Follow the commit-message, staging-branch and target-selection rules in the shared team contract. Use an explicitly configured development/test target; otherwise default to the current hosting instance. Missing configuration permits same-instance work under normal authorization. Report an invalid or unreachable explicit target without silently falling back. Record the hosting instance, selected target, actual checkout/binds, branch and write scope. Account for interruption of active workers when a reload/restart is needed, using existing lifecycle/checkpoint coordination. A task-owned helper fixture proves only its bounded behavior; no fleet service is required.
 

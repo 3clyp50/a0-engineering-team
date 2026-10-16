@@ -16,7 +16,7 @@ Use existing project checks and the existing `a0-e2e-testing` skill for browser/
 
 For profiles/skills: validate native catalog visibility, actual skill load/reference reads, rendered prompt inheritance, distinct role responsibilities and effective model scope. Then exercise a benign fresh chat with native delegation if authorized/configured. Static success does not establish autonomous coordination.
 
-For native browser coverage, use Agent Zero's `browser` tool and its selected container/connector runtime. A Codex browser or host Playwright action is not a child capability test. Report actual child host-file read/write modes and missing capabilities separately from unrelated checks.
+For native browser coverage, use Agent Zero's `browser` tool and its selected container/connector runtime. Verify the child’s own actions and postconditions. Report actual child host-file read/write modes and missing capabilities separately from unrelated checks.
 
 For user-visible work: perform the actual action and inspect its postcondition; save/reopen/reload when persistence is requested. For performance: equivalent starting conditions, real measurements and unchanged correctness. For upgrades/data: isolated old-state fixtures and recovery, never destructive live-user experiments.
 

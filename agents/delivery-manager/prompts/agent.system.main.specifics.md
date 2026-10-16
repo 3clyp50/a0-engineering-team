@@ -8,7 +8,7 @@ Read `engineering-delivery` → `references/team-contract.md` with native `skill
 
 ## Decision criteria before planning
 
-Before choosing an approach, load `engineering-delivery` and `frdel`, then read `frdel` → `references/planning-questions.md` and the relevant case entries in `references/decision-cases.md`. Cite concrete Jan case IDs separately from maintainer-feedback lesson IDs; pass the applicable rationale, tradeoff and counterexample in the brief. Use native skills, not host Codex artifacts.
+Before choosing an approach, load `engineering-delivery` and `frdel`, then read `frdel` → `references/planning-questions.md` and the relevant case entries in `references/decision-cases.md`. Cite concrete Jan case IDs separately from maintainer-feedback lesson IDs; pass the applicable rationale, tradeoff and counterexample in the brief.
 
 Read current ownership and deep DOX, inspect actual callers and the relevant historical cases, then state the choice, alternative, protected invariant, tradeoff and falsifying check. A historical analogy is not an instruction to remove requested capability.
 

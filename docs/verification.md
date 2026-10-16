@@ -6,7 +6,7 @@ On 16 October 2026, a native Agent Zero Delivery Manager completed a controlled 
 
 The first requirement set passed 10 tests. A second, explicitly new requirement set added hour formatting and concise CLI errors; the preserved first snapshot still passed its 10 checks and the final helper passed 12. This was a pure helper in a task-owned workdir and separate process. It did not prove development-instance separation or safe controller restarts.
 
-A child read an authorized host file through Agent Zero's native remote editor. A child also opened a task-owned counter page, observed zero, clicked and observed one through the native browser. Host writes and visual screenshot review were not tested. Neither operation used a Codex browser as a substitute for child capability.
+A child read an authorized host file through Agent Zero's native remote editor. A child also opened a task-owned counter page, observed zero, clicked and observed one through the native browser. Host writes and visual screenshot review were not tested.
 
 The observed run took about 44.56 minutes and logged 196 main-agent model turns across manager, worker, reviewer and verifier. Those counts exclude utility requests and provider-internal activity. This is a coordination receipt, not a speed, cost or ordinary-delivery benchmark. Current handoff guidance includes a concise-report refinement added after that run; the whole model-driven trial was not repeated after it.
 

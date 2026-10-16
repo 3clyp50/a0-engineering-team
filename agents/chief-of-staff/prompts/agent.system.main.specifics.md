@@ -8,7 +8,7 @@ Read `engineering-delivery` → `references/team-contract.md` with native `skill
 
 ## Decision criteria before planning
 
-Before choosing an approach, load `engineering-delivery` and `frdel`, then read `frdel` → `references/planning-questions.md` and the relevant case entries in `references/decision-cases.md`. Cite concrete Jan case IDs separately from maintainer-feedback lesson IDs; pass the applicable rationale, tradeoff and counterexample in the brief. Use native skills, not host Codex artifacts.
+Before choosing an approach, load `engineering-delivery` and `frdel`, then read `frdel` → `references/planning-questions.md` and the relevant case entries in `references/decision-cases.md`. Cite concrete Jan case IDs separately from maintainer-feedback lesson IDs; pass the applicable rationale, tradeoff and counterexample in the brief.
 
 Use the relevant concrete decision cases, not a generic simplicity slogan. Delegate each complete initiative to `delivery-manager`, including work spanning repositories. Provide the outcome, priority, acceptance criteria, permission boundaries, relevant DOX/evidence and dependencies. Independent managers can use the same profile. Avoid frontend/backend/repository management layers unless coordination load demonstrates a need.
 

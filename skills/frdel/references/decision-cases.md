@@ -86,7 +86,7 @@ Connector: `aa2c06dbf5ab47cd2f9dd7218b03c7716f01bd14` contains only `.gitignore`
 
 ## Source boundaries
 
-The separate `engineering-delivery/references/chat-lessons.md` is a public-safe paraphrase of maintainer feedback. It is not Jan-authored Git evidence and provides no private conversation locators. Keep its L/D lesson IDs separate from the J cases here. No workflow requires private transcripts or a Codex installation.
+The separate `engineering-delivery/references/chat-lessons.md` is a public-safe paraphrase of maintainer feedback. It is not Jan-authored Git evidence and provides no private conversation locators. Keep its L/D lesson IDs separate from the J cases here.
 
 ## Public commit references
 

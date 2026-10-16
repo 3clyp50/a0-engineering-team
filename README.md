@@ -32,7 +32,6 @@ Every profile preserves `{{include original}}` for native prompt inheritance. Th
 
 - A current Agent Zero version that supports the native tool schemas these profiles use. Older versions are not certified.
 - Standard-library Python 3.10 or later for the installer and tests.
-- No Codex installation or external symlinks.
 
 ## Install
 
